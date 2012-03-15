@@ -1,0 +1,37 @@
+<plugin name='scribe' version='0.1' grailsVersion='2.0 &gt; *'>
+  <author>Your name</author>
+  <title>Scribe Grails Plugin</title>
+  <description>Brief summary/description of the plugin.
+</description>
+  <documentation>http://grails.org/plugin/scribe-grails-plugin</documentation>
+  <type>ScribeGrailsPlugin</type>
+  <resources>
+    <resource>com.rivetlabs.scribe.oauth.ScribeController</resource>
+    <resource>com.rivetlabs.scribe.oauth.ScribeService</resource>
+    <resource>com.rivetlabs.scribe.oauth.ScribeTagLib</resource>
+  </resources>
+  <repositories>
+    <repository name='grailsCentral' url='http://plugins.grails.org' />
+    <repository name='http://repo.grails.org/grails/plugins' url='http://repo.grails.org/grails/plugins/' />
+    <repository name='http://repo.grails.org/grails/core' url='http://repo.grails.org/grails/core/' />
+    <repository name='grailsCore' url='http://svn.codehaus.org/grails/trunk/grails-plugins' />
+    <repository name='mavenCentral' url='http://repo1.maven.org/maven2/' />
+    <repository name='http://mvnrepository.com' url='http://mvnrepository.com/' />
+    <repository name='http://m2repo.spockframework.org/snapshots' url='http://m2repo.spockframework.org/snapshots/' />
+  </repositories>
+  <dependencies>
+    <test>
+      <dependency group='org.gmock' name='gmock' version='0.8.2' />
+    </test>
+    <runtime>
+      <dependency group='org.scribe' name='scribe' version='1.3.0' />
+    </runtime>
+  </dependencies>
+  <plugins>
+    <test>
+      <plugin group='org.grails.plugins' name='spock' version='0.6-SNAPSHOT' />
+    </test>
+  </plugins>
+  <runtimePluginRequirements />
+  <behavior />
+</plugin>
